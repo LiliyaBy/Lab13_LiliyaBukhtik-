@@ -1,0 +1,23 @@
+﻿@model Options
+
+
+<div class="text-left">
+    <h1 class="display-4">Exercise 3</h1>
+    <form action="/Home/Result" method="post">
+        
+        
+        <label asp-for="name"></label>
+        <input type="text" asp-for="name" />
+
+        <label asp-for="gender">gender</label>
+        <select asp-for="gender" asp-items="Html.GetEnumSelectList<Gender>()"></select>
+
+        <label asp-for="age"></label>
+        <input type="text" asp-for="age" />
+
+        <input type="submit" value="Save" />
+
+
+    </form>
+
+</div>
